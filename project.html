@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio de Projetos</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4;
+      --radius:12px; --gap:18px; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0; background:linear-gradient(180deg,#071029 0%, var(--bg) 100%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; padding:32px;
+      box-sizing:border-box;
+    }
+
+    .wrap{max-width:1100px;margin:0 auto;}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    header h1{font-size:1.5rem;margin:0}
+    header p{color:var(--muted);margin:0;font-size:0.95rem}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--gap)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04); padding:14px; border-radius:var(--radius); box-shadow:0 6px 18px rgba(2,6,23,0.6);
+      display:flex;flex-direction:column;gap:12px;min-height:260px;}
+
+    .thumb{display:block;border-radius:10px;overflow:hidden;flex-shrink:0;}
+    .thumb img{display:block;width:100%;height:170px;object-fit:cover;transition:transform .25s ease}
+    a.thumb:hover img{transform:scale(1.03)}
+
+    .meta{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .title{font-weight:600}
+    .desc{color:var(--muted);font-size:0.95rem;line-height:1.35}
+
+    .links{display:flex;gap:8px;margin-top:auto}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:10px;color:inherit;text-decoration:none;font-size:0.95rem;transition:all 0.3s ease}
+    .btn:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(6,182,212,0.08)}
+
+    footer{color:var(--muted);margin-top:28px;font-size:0.9rem}
+
+    .instructions{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px dashed rgba(255,255,255,0.03);color:var(--muted);font-size:0.95rem}
+
+    /* Botão de retorno */
+    .btn-voltar {
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      padding:10px 16px;
+      border-radius:var(--radius);
+      font-weight:600;
+      margin-bottom:20px;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .btn-voltar:hover {
+      background:#0891b2;
+      transform:translateY(-2px);
+    }
+
+    @media (max-width:420px){
+      body{padding:18px}
+      .thumb img{height:150px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Botão de retorno à página principal -->
+    <a href="index.html" class="btn-voltar">← Voltar à Página Principal</a>
+
+    <header>
+      <div>
+        <h1>Meus Projetos</h1>
+        <p>Clique na imagem para abrir o projeto. Edite cada cartão com suas informações.</p>
+      </div>
+      <div class="instructions">
+        Dica: Substitua as imagens e links nos exemplos por suas imagens (jpg/png) e URLs.
+      </div>
+    </header>
+
+    <main class="grid">
+
+      <!-- ====== Exemplo de cartão de projeto ====== -->
+      <article class="card">
+        <a class="thumb" href="https://scratch.mit.edu/projects/1093229563/fullscreen/" target="_blank" rel="noopener noreferrer">
+          <img src="img/ecm 2.avif" alt="Miniatura Projeto 1" />
+        </a>
+        <div class="meta">
+          <div class="title">Projeto 1 — Batalha espacial</div>
+          <div style="color:var(--muted);font-size:0.9rem">Scratch</div>
+        </div>
+        <div class="desc">Batalha espacial, controle a lendária Millenium Falcon e destrua as naves do império.</div>
+        <div class="links">
+          <a class="btn" href="https://scratch.mit.edu/projects/1093229563/fullscreen/" target="_blank" rel="noopener noreferrer">Abrir projeto</a>
+          <a class="btn" href="https://scratch.mit.edu/projects/1093229563/fullscreen/" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+        </div>
+      </article>
+
+      <!-- ====== Exemplo 2 ====== -->
+      <article class="card">
+        <a class="thumb" href="https://exemplo.com/projeto-2" target="_blank" rel="noopener noreferrer">
+          <img src="https://via.placeholder.com/800x450.png?text=Projeto+2" alt="Miniatura Projeto 2" />
+        </a>
+        <div class="meta">
+          <div class="title">Projeto 2 — App Interativo</div>
+          <div style="color:var(--muted);font-size:0.9rem">React • API</div>
+        </div>
+        <div class="desc">Descrição curta do projeto 2. Explique o problema resolvido e funcionalidades principais.</div>
+        <div class="links">
+          <a class="btn" href="https://exemplo.com/projeto-2" target="_blank" rel="noopener noreferrer">Abrir projeto</a>
+          <a class="btn" href="https://github.com/usuario/projeto-2" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+        </div>
+      </article>
+
+      <!-- ====== Exemplo 3 ====== -->
+      <article class="card">
+        <a class="thumb" href="https://exemplo.com/projeto-3" target="_blank" rel="noopener noreferrer">
+          <img src="https://via.placeholder.com/800x450.png?text=Projeto+3" alt="Miniatura Projeto 3" />
+        </a>
+        <div class="meta">
+          <div class="title">Projeto 3 — Visualização de Dados</div>
+          <div style="color:var(--muted);font-size:0.9rem">D3.js • CSV</div>
+        </div>
+        <div class="desc">Resumo do projeto 3. Indique como executar e que tipos de dados ele usa.</div>
+        <div class="links">
+          <a class="btn" href="https://exemplo.com/projeto-3" target="_blank" rel="noopener noreferrer">Abrir projeto</a>
+          <a class="btn" href="https://github.com/usuario/projeto-3" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+        </div>
+      </article>
+
+    </main>
+
+    <footer>
+      <p>Como usar: copie este arquivo para o seu servidor / hosting (ou abra localmente). Para adicionar outro projeto, duplique um <code>&lt;article class="card"&gt;</code> e atualize imagem, links e texto.</p>
+    </footer>
+  </div>
+</body>
+</html>

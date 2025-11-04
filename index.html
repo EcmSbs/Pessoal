@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evandro césar moreira</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="project.html">Projetos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="center">
+                <img id="foto-perfil" src="./img/ecm1.png" alt="">
+            </div>
+            <h1>Evandro César Moreira</h1>
+            <h1>Professor</h1>
+        </header>
+<h1>
+        <main>
+            <section>
+                
+                <p>
+                    Nasci no dia 1º de abril de 1980, em Santo André SP, e hoje moro em Terra Roxa, no Paraná. Sempre fui dedicado, gosto de trabalhar
+                    em equipe e acredito muito no poder do bom relacionamento no ambiente de trabalho. Tenho um perfil tranquilo, mas comprometido — gosto de aprender, ensinar e contribuir 
+                    para que tudo funcione da melhor forma possível.
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    Desde cedo, sempre gostei de aprender e de entender como as coisas funcionam. Isso me levou 
+                    a cursar Tecnologia em Informática na Universidade Paranaense (UNIPAR), onde me formei em 2006.
+                    Mais tarde, sentindo vontade de ampliar meus conhecimentos na área de gestão, voltei à UNIPAR 
+                    e concluí, em 2016, um MBA em Gestão Empresarial e Financeira. Também busquei aprimoramento 
+                    prático e pessoal com cursos que me ajudaram muito ao longo da carreira, como o Curso de Formação 
+                    para Supervisores de Produção na Terzone Escola de Negócios, realizado em 2012, e o curso de 
+                    Eneagrama em 2018, que me ajudou bastante no autoconhecimento e nas relações interpessoais.
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    Minha jornada profissional começou bem cedo, lá em 1996, na empresa Paraíso Moda Bebê, uma das 
+                    maiores do Brasil no setor de confecção infantil. Entrei como costureiro, e com o tempo fui aprendendo 
+                    e assumindo novas funções, como auxiliar de serviços gerais e auxiliar de logística.
+                    Foram anos de muito aprendizado, preparando lotes de produção, organizando envios e recebimentos 
+                    de produtos, e entendendo de perto como funciona toda a cadeia produtiva de uma empresa. Essa primeira 
+                    experiência me deu uma base sólida — aprendi sobre responsabilidade, trabalho em equipe e comprometimento.
+
+                    Em 2008, entrei na Mariceu Indústria de Roupas Infantis Ltda, também em Terra Roxa. Comecei trabalhando com 
+                    manutenção de máquinas de costura e da parte predial, fazendo reparos elétricos e hidráulicos e cuidando 
+                    da manutenção preventiva e corretiva. Com o tempo, meu esforço foi reconhecido e, em 2012, fui promovido 
+                    a supervisor de produção.
+                    Nessa função, aprendi o que é liderar pessoas, treinar equipes, acompanhar índices de produção 
+                    e qualidade, cuidar de contratações, desligamentos e até uma parte da gestão financeira da empresa.
+                    Participei também de projetos de melhoria contínua, baseados em Lean Manufacturing, criando sistemas que 
+                    ajudaram a medir a produtividade e a qualidade de forma mais clara e eficiente. Foi um período de muito 
+                    crescimento e realização profissional.
+
+                    Mais adiante, tive uma experiência gratificante de atuar como professor, contratado pelo Governo do Estado 
+                    do Paraná através do PSS. Foi uma vivência marcante, porque pude repassar um pouco do que aprendi ao longo 
+                    dos anos e contribuir para o crescimento de outros.
+
+                    Hoje, continuo buscando evoluir, sempre disposto a aprender e a dar o meu melhor em qualquer desafio que aparecer.<br><br>
+                    
+                    📞 Contato<br>
+                    📱 Celular: (44) 99861-4204<br>
+                    📱 Recados: (44) 99901-1986 (Sirlei)<br>
+                    📱 Recados: (44) 99955-8401 (Lourdes)<br>
+                    📧 E-mail: ecmsbs@hotmail.com<br>
+                </p>
+            </section>
+        </main>
+</h1>
+        <footer>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./img/github.svg" alt="Github">
+                <p>Github</p>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./img/linkedin.svg" alt="Linkedin">
+                <p>Linkedin</p>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./img/youtube.svg" alt="Youtube">
+                <p>Youtube</p>
+            </a>
+        </footer>
+    </div>
+
+    <!-- Script para alternar imagens automaticamente -->
+    <script>
+        const imagens = ["./img/ecm1.png", "./img/ecm2.JPG", "./img/ecm3.jpg"];
+        let indice = 0;
+        const imgElemento = document.getElementById("foto-perfil");
+
+        setInterval(() => {
+            indice = (indice + 1) % imagens.length;
+            imgElemento.style.opacity = 0;
+            setTimeout(() => {
+                imgElemento.src = imagens[indice];
+                imgElemento.style.opacity = 1;
+            }, 500);
+        }, 2500);
+    </script>
+</body>
+</html>
